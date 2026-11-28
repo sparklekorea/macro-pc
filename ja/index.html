@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="ja" data-sk-page="ja">
+<head>
+<!-- 자동 생성: tools/site-lang/make-lang-pages.cjs (한국어 index.html 에서 만듦. 이 파일을 직접 고치지 마세요) -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<title>Sparkle Macro — 画像を見つけて代わりにクリックする自動クリック</title>
+<meta name="description" content="画面に画像が見えたら、PCが代わりにクリック。録画でかんたんに作れて、隠したウィンドウでも動くWindows用自動クリックソフト。無料で始められます。">
+<link rel="canonical" href="https://macro.sparklekorea.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://macro.sparklekorea.com/">
+<link rel="alternate" hreflang="en" href="https://macro.sparklekorea.com/en/">
+<link rel="alternate" hreflang="ja" href="https://macro.sparklekorea.com/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://macro.sparklekorea.com/zh/">
+<link rel="alternate" hreflang="es" href="https://macro.sparklekorea.com/es/">
+<link rel="alternate" hreflang="pt" href="https://macro.sparklekorea.com/pt/">
+<link rel="alternate" hreflang="de" href="https://macro.sparklekorea.com/de/">
+<link rel="alternate" hreflang="x-default" href="https://macro.sparklekorea.com/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta name="naver-site-verification" content="ea3603b24b669458bc153d7611747bbc3c1c218b" />
+<meta name="naver-site-verification" content="3b2aebe2d9a48f1d659768ca3a1edcfee66cca50" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://macro.sparklekorea.com/ja/">
+<meta property="og:title" content="Sparkle Macro — 画像を見つけて代わりにクリックする自動クリック">
+<meta property="og:description" content="録画でかんたんに作れて、隠したウィンドウでも動くWindows用自動クリックソフト。無料で始められます。">
+<meta property="og:image" content="https://macro.sparklekorea.com/img/og.jpg">
+<meta name="theme-color" content="#0d0e12">
+<link rel="icon" href="../icon.png">
+<style>
+:root{
+  --bg:#0c0d11;--bg2:#111218;--card:#15161d;--line:rgba(231,201,137,.24);--line2:rgba(255,255,255,.07);
+  --gold:#e7c989;--gold2:#f6e2b0;--text:#f2eee6;--muted:#a49e94;--green:#6fd39a;--violet:#8f86ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section,[id]{scroll-margin-top:76px}
+#top{scroll-margin-top:0}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:keep-all}
+a{color:var(--gold);text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.gold{color:var(--gold);text-shadow:0 0 26px rgba(231,201,137,.35)}
+
+/* 위쪽 줄 */
+nav{position:sticky;top:0;z-index:20;background:rgba(12,13,17,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line2)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--gold);font-size:17.5px;letter-spacing:-.2px}
+.logo img{width:34px;height:34px;border-radius:9px}
+nav .links{display:flex;gap:22px;margin-left:12px}
+nav .links a{color:var(--muted);font-size:14.5px}
+nav .links a:hover{color:var(--text)}
+nav .sp{flex:1}
+.navdl{font-size:13.5px;font-weight:800;color:#17181e;background:var(--gold);border-radius:10px;padding:8px 15px}
+.lang{font-size:13px;color:var(--muted);cursor:pointer;border:1px solid var(--line2);border-radius:20px;padding:5px 13px;background:transparent;font-family:inherit}
+.lang:hover{color:var(--text)}
+.lang option{background:var(--bg);color:var(--text)}
+
+/* 버튼 */
+.btn{display:inline-flex;align-items:center;gap:11px;padding:14px 24px;border-radius:14px;font-weight:800;font-size:16px;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap}
+.btn svg{width:22px;height:22px;flex:none}
+.btn small{display:block;font-size:11px;font-weight:600;opacity:.75;line-height:1.1}
+.btn .t{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25}
+.btn-gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#17181e;box-shadow:0 8px 30px rgba(231,201,137,.28),inset 0 0 0 1px rgba(255,255,255,.2)}
+.btn-gold:hover{transform:translateY(-1px);box-shadow:0 12px 38px rgba(231,201,137,.4)}
+.btn-line{border:1px solid var(--line);color:var(--text);background:rgba(231,201,137,.05)}
+.btn-line:hover{background:rgba(231,201,137,.1);transform:translateY(-1px)}
+.btn-line svg{stroke:var(--gold)}
+
+/* 첫 화면 */
+.hero{position:relative;padding:76px 0 90px;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-200px;top:-180px;width:900px;height:700px;background:radial-gradient(closest-side,rgba(231,201,137,.14),transparent);pointer-events:none}
+.hero:after{content:"";position:absolute;left:-260px;bottom:-260px;width:700px;height:600px;background:radial-gradient(closest-side,rgba(110,120,220,.12),transparent);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.05fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--gold);border:1px solid var(--line);border-radius:20px;padding:5px 13px;background:rgba(231,201,137,.06)}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.hero h1{margin:20px 0 16px;font-size:clamp(34px,5.2vw,56px);line-height:1.16;letter-spacing:-1.5px;font-weight:800}
+.hero .lead{margin:0;max-width:520px;color:var(--muted);font-size:clamp(15.5px,1.8vw,18px)}
+.hero .btns{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.hero .note{margin-top:14px;font-size:13px;color:var(--muted)}
+.stage{position:relative;padding:10px 0 30px}
+.stage .pc{border-radius:12px;overflow:hidden;border:1px solid rgba(231,201,137,.32);box-shadow:0 34px 90px rgba(0,0,0,.6),0 0 70px rgba(231,201,137,.10);transform:perspective(1600px) rotateY(-8deg) rotateX(3deg);transform-origin:left center;max-width:560px;margin-left:auto}
+/* 그림을 찾아 누르는 모습 */
+.found{position:absolute;left:4%;top:44%;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:14px;background:rgba(21,22,29,.92);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.55);backdrop-filter:blur(6px)}
+.found .tg{padding:7px 14px;border-radius:8px;background:#4696ff;color:#fff;font-weight:800;font-size:14px;position:relative;outline:2px solid var(--gold);outline-offset:4px;animation:pick 2.4s ease-in-out infinite}
+.found b{display:block;font-size:14px}
+.found span{display:block;font-size:12.5px;color:var(--green)}
+.cursor{position:absolute;right:-12px;bottom:-14px;width:22px;height:22px;animation:tap 2.4s ease-in-out infinite}
+@keyframes pick{0%,100%{outline-color:rgba(231,201,137,.2)}45%,60%{outline-color:var(--gold)}}
+@keyframes tap{0%,100%{transform:translate(14px,14px)}45%{transform:translate(0,0)}55%{transform:translate(0,0) scale(.85)}65%{transform:translate(0,0)}}
+@media (prefers-reduced-motion:reduce){.found .tg,.cursor{animation:none}}
+
+/* 섹션 공통 */
+section{padding:90px 0;position:relative}
+.alt{background:var(--bg2);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
+.sec-h{text-align:center;max-width:680px;margin:0 auto 56px}
+.sec-h small{color:var(--gold);font-weight:800;letter-spacing:1.5px;font-size:12.5px}
+.sec-h h2{margin:8px 0 10px;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.8px;line-height:1.25}
+.sec-h p{margin:0;color:var(--muted)}
+
+/* 3단계 흐름 */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:980px;margin:0 auto}
+.fl{position:relative;text-align:center;padding:30px 22px 26px;border:1px solid var(--line2);border-radius:20px;background:var(--card)}
+.fl .em{font-size:38px;line-height:1;margin-bottom:14px;filter:drop-shadow(0 0 14px rgba(231,201,137,.35))}
+.fl b{display:block;font-size:18px;margin-bottom:6px}
+.fl span{font-size:14px;color:var(--muted)}
+.fl:not(:last-child):after{content:"";position:absolute;right:-14px;top:50%;width:10px;height:10px;border-top:2px solid var(--gold);border-right:2px solid var(--gold);transform:translateY(-50%) rotate(45deg);z-index:2}
+
+/* 기능 카드 */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{border:1px solid var(--line2);border-radius:16px;padding:22px 20px;background:var(--card);transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--line)}
+.ico{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:rgba(231,201,137,.05)}
+.ico svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 4px rgba(231,201,137,.6))}
+.card b{display:block;margin-bottom:4px;font-size:15.5px}
+.card span{font-size:13.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11px;font-weight:800;color:var(--violet);border:1px solid rgba(143,134,255,.4);border-radius:8px;padding:0 6px;margin-left:6px;vertical-align:2px}
+
+/* 화면 소개 */
+.pcrow{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;margin-bottom:90px}
+.pcrow:last-child{margin-bottom:0}
+.pcrow.rev{grid-template-columns:1.2fr 1fr}
+.pcrow.rev .txt{order:2}
+.pcrow h3{margin:0 0 10px;font-size:26px;letter-spacing:-.5px}
+.pcrow p{margin:0;color:var(--muted)}
+.shot{border-radius:12px;overflow:hidden;border:1px solid rgba(231,201,137,.3);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 50px rgba(231,201,137,.08);max-width:560px}
+.pcrow.rev .shot{margin-left:0}
+.pcrow:not(.rev) .shot{margin-left:auto}
+ul.chk{list-style:none;padding:0;margin:18px 0 0}
+ul.chk li{position:relative;padding-left:26px;margin:8px 0;font-size:15px}
+ul.chk li:before{content:"";position:absolute;left:3px;top:8px;width:10px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+
+/* 요금 */
+.plans{display:grid;grid-template-columns:1fr 1.15fr;gap:18px;max-width:900px;margin:0 auto}
+.plan{border:1px solid var(--line2);border-radius:22px;padding:30px 28px;background:var(--card)}
+.plan.pro{border-color:var(--line);background:radial-gradient(90% 90% at 100% 0%,rgba(231,201,137,.12),transparent),var(--card);box-shadow:0 0 50px rgba(231,201,137,.08)}
+.plan h3{margin:0 0 4px;font-size:21px}
+.plan .pr{font-size:30px;font-weight:800;letter-spacing:-.8px;margin:6px 0 2px}
+.plan .pr small{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:0}
+.plan .sub{color:var(--muted);font-size:14px}
+.prices{display:grid;gap:8px;margin:16px 0 4px}
+.prices div{display:flex;justify-content:space-between;align-items:baseline;padding:10px 14px;border:1px solid var(--line2);border-radius:12px;background:rgba(255,255,255,.02)}
+.prices div b{font-size:15px}
+.prices div span{font-weight:800;color:var(--gold)}
+.prices div em{font-style:normal;font-size:12px;color:var(--muted);margin-left:8px}
+.prices .best{border-color:var(--line);background:rgba(231,201,137,.06)}
+
+/* 설치 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+.step{position:relative;border:1px solid var(--line2);border-radius:16px;padding:24px 18px 18px;background:var(--card)}
+.step:before{counter-increment:s;content:counter(s);position:absolute;top:-13px;left:18px;width:26px;height:26px;border-radius:50%;background:var(--gold);color:#17181e;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.step b{display:block;margin-bottom:4px}
+.step span{font-size:13.5px;color:var(--muted)}
+.ss{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.ssbox{border-radius:6px;background:#1f6fc5;color:#fff;padding:22px 24px;font-family:"Segoe UI","Malgun Gothic",sans-serif;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.ssbox h4{margin:0 0 12px;font-size:22px;font-weight:400}
+.ssbox p{margin:0 0 10px;font-size:13px}
+.ssbox .more{display:inline-block;font-size:13px;text-decoration:underline;outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.ssbox .bt{display:flex;justify-content:flex-end;gap:8px;margin-top:22px}
+.ssbox .bt span{border:1px solid rgba(255,255,255,.85);padding:5px 22px;font-size:13px}
+.ssbox .bt .run{outline:2px solid var(--gold);outline-offset:3px}
+.ss h3{margin:0 0 8px;font-size:20px}
+.ss p{margin:0;color:var(--muted);font-size:14.5px}
+
+/* 질문 */
+.faq{max-width:780px;margin:0 auto}
+details{border:1px solid var(--line2);border-radius:14px;background:var(--card);margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:17px 20px;font-weight:700;display:flex;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";margin-left:auto;flex:none;width:8px;height:8px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);transition:transform .2s}
+details[open] summary:after{transform:rotate(-135deg)}
+details p{margin:0;padding:0 20px 17px;color:var(--muted);font-size:14.5px}
+
+.final{text-align:center;padding:72px 22px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(80% 120% at 50% 0%,rgba(231,201,137,.13),transparent),var(--bg2)}
+.final img{width:84px;height:84px;margin:0 auto 18px;filter:drop-shadow(0 0 24px rgba(143,134,255,.45))}
+.final h2{margin:0 0 8px;font-size:clamp(26px,3.6vw,36px);letter-spacing:-.6px}
+.final p{margin:0 0 28px;color:var(--muted)}
+.final .btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+footer{padding:44px 0 54px;text-align:center;font-size:12.5px;color:var(--muted)}
+footer p{margin:4px 0}
+footer a{color:var(--muted);text-decoration:underline}
+
+/* 스크롤하면 살짝 떠오르기 */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+@media (max-width:980px){
+  .hero .wrap{grid-template-columns:1fr}
+  .stage{max-width:600px;margin:10px auto 0}
+  .pcrow,.pcrow.rev,.ss,.plans{grid-template-columns:1fr}
+  .pcrow.rev .txt{order:0}
+  .pcrow{gap:26px;margin-bottom:64px}
+  .shot,.pcrow:not(.rev) .shot{margin:0 auto}
+  .cards,.steps{grid-template-columns:1fr 1fr}
+  nav .links{display:none}
+}
+@media (max-width:640px){
+  .flow{grid-template-columns:1fr}
+  .fl:not(:last-child):after{right:50%;top:auto;bottom:-14px;transform:translateX(50%) rotate(135deg)}
+}
+@media (max-width:560px){
+  .cards,.steps{grid-template-columns:1fr}
+  .navdl{display:none}
+  .hero{padding:44px 0 60px}
+  .btn{width:100%;justify-content:center}
+  .found{left:2%;top:38%;transform:scale(.85);transform-origin:left top}
+}
+</style>
+</head>
+<body id="top">
+
+<nav><div class="wrap">
+  <a class="logo" href="#top"><img src="../icon.png" alt=""><span data-t="brand">스파클 매크로</span></a>
+  <div class="links"><a href="#feat" data-t="nav1">기능</a><a href="#price" data-t="nav2">요금</a><a href="#install" data-t="nav3">설치</a><a href="#faq" data-t="nav4">자주 묻는 질문</a></div>
+  <span class="sp"></span>
+  <select id="lang" class="lang" aria-label="Language"></select>
+  <a class="navdl dl" href="#" data-t="navdl">무료 다운로드</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="badge"><i></i><span data-t="badge">Windows 10 · 11 · 무료로 시작</span></span>
+    <h1 data-t="h1">화면에 그림이 보이면,<br><span class="gold">클릭은 컴퓨터가</span> 해요</h1>
+    <p class="lead" data-t="lead">누를 버튼을 그림으로 찍어 두면 스파클 매크로가 화면에서 찾아 대신 눌러 줘요. 창이 조금 움직여도 다시 찾아내고, 직접 해 보이면 그대로 녹화해 단계로 만들어 줘요.</p>
+    <div class="btns">
+      <a class="btn btn-gold dl" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        <span class="t" data-t="dl1">무료 다운로드<small>Windows 설치 파일</small></span>
+      </a>
+      <a class="btn btn-line" href="#how">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg>
+        <span data-t="how">어떻게 쓰나요?</span>
+      </a>
+    </div>
+    <p class="note" data-t="note">v1.0.27 · 약 80MB · 새 버전은 프로그램이 알아서 업데이트해요</p>
+  </div>
+  <div class="stage">
+    <div class="pc"><img src="../img/main.webp" width="1100" height="1230" alt="스파클 매크로 작업 화면"></div>
+    <div class="found">
+      <div class="tg"><i data-t="fTg" style="font-style:normal">게임 시작</i>
+        <svg class="cursor" viewBox="0 0 24 24"><path d="M4 2l15 10-6.5 1.5L9 20z" fill="#fff" stroke="#17181e" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </div>
+      <div><b data-t="fB">그림 찾음 → 클릭</b><span data-t="fS">유사도 98%</span></div>
+    </div>
+  </div>
+</div></header>
+
+<section id="how" class="alt"><div class="wrap">
+  <div class="sec-h rv"><small>HOW IT WORKS</small><h2 data-t="howH">세 단계면 끝나요</h2><p data-t="howP">프로그래밍은 몰라도 돼요. 누를 곳을 보여 주기만 하면 돼요.</p></div>
+  <div class="flow rv">
+    <div class="fl"><div class="em">📸</div><b data-t="f1">그림으로 찍기</b><span data-t="f1d">누를 버튼·아이콘을 마우스로 드래그해서 찍어요. 또는 🔴 녹화로 직접 해 보여요.</span></div>
+    <div class="fl"><div class="em">🧩</div><b data-t="f2">순서 정하기</b><span data-t="f2d">그림 찾아 누르기, 키 누르기, 기다리기를 원하는 순서로 쌓아요.</span></div>
+    <div class="fl"><div class="em">▶️</div><b data-t="f3">시작 누르기</b><span data-t="f3d">F10 한 번이면 시작, 다시 누르면 바로 멈춰요.</span></div>
+  </div>
+</div></section>
+
+<section id="feat"><div class="wrap">
+  <div class="sec-h rv"><small>FEATURES</small><h2 data-t="featH">반복 작업을 맡겨 두세요</h2><p data-t="featP">쉬운 것부터 똑똑한 것까지, 필요한 만큼만 꺼내 쓰세요.</p></div>
+  <div class="cards rv">
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 11l2.5 2.5L16 8"/></svg></div><b data-t="c1">그림 찾아 누르기</b><span data-t="c1d">좌표가 아니라 그림으로 찾아요. 창을 옮겨도 다시 찾아내요.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/></svg></div><b data-t="c2">🔴 녹화로 만들기</b><span data-t="c2d">직접 클릭·키 입력을 해 보이면 그대로 단계가 돼요. 이름도 알아서 지어요.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="12" height="10" rx="1.5"/><rect x="9" y="9" width="12" height="10" rx="1.5"/></svg></div><b data-t="c3">가려 둔 창에서도</b><span data-t="c3d">대상 창을 정하면 다른 창 뒤에 숨겨 둔 채로 돌려요. 그동안 PC는 다른 일에.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h10M4 12h7M4 18h10"/><path d="M17 9l3 3-3 3"/></svg></div><b data-t="c4">그룹·흐름 정리</b><span data-t="c4d">단계를 그룹으로 묶고 ☑/☐ 로 켜고 꺼요. 찾으면 이동, 못 찾으면 다시 하기도.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg></div><b data-t="c5">👁 감시 <span class="tag">프리미엄</span></b><span data-t="c5d">화면을 지켜보다 조건이 맞을 때만 실행해요. 그동안 작업은 잠시 멈췄다 이어서.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M5 4l2 2M19 4l-2 2"/></svg></div><b data-t="c6">⏰ 예약 <span class="tag">프리미엄</span></b><span data-t="c6d">정한 시각에 작업을 바꾸거나 시작·종료해요. 매일 아침 출석 체크도.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 6h14M12 6v13M8 19h8"/></svg></div><b data-t="c7">문자·색으로 찾기 <span class="tag">프리미엄</span></b><span data-t="c7d">화면 속 글자를 읽어 찾거나, 특정 색이 보일 때 눌러요.</span></div>
+    <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 10h4v4h-4z" fill="currentColor"/></svg></div><b data-t="c8">언제든 F10 정지</b><span data-t="c8d">키 하나로 즉시 멈춰요. 마우스를 직접 잡으면 손을 뗄 때까지 기다려요.</span></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="pcrow rv">
+    <div class="txt">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+      <h3 data-t="w1h">지켜보다가, 필요할 때만</h3>
+      <p data-t="w1p">체력이 낮아지거나 알림 창이 뜨는 순간처럼, 정해 둔 그림이 보이면 그때만 따로 정한 동작을 해요.</p>
+      <ul class="chk">
+        <li data-t="w1a">여러 감시 항목을 동시에 지켜봐요</li>
+        <li data-t="w1b">감시가 도는 동안 작업은 하던 단계를 마치고 잠시 멈춰요</li>
+        <li data-t="w1c">같은 상황이 연달아 와도 쉬는 시간(쿨다운)으로 조절해요</li>
+      </ul>
+    </div>
+    <div class="shot"><img src="../img/watch.webp" width="1100" height="1230" alt="감시 화면" loading="lazy"></div>
+  </div>
+  <div class="pcrow rev rv">
+    <div class="txt">
+      <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2"/></svg></div>
+      <h3 data-t="w2h">정한 시각에 알아서</h3>
+      <p data-t="w2p">아침 6시엔 출석 체크, 밤 11시 30분엔 프로그램 종료처럼 시간표를 짜 두면 그대로 해요.</p>
+      <ul class="chk">
+        <li data-t="w2a">예약 안에 단계를 바로 만들어 실행해요</li>
+        <li data-t="w2b">작업 중 원하는 그룹만 골라 실행할 수 있어요</li>
+        <li data-t="w2c">끝나면 디스코드·텔레그램으로 알려 줘요</li>
+      </ul>
+    </div>
+    <div class="shot"><img src="../img/schedule.webp" width="1100" height="1230" alt="예약 화면" loading="lazy"></div>
+  </div>
+</div></section>
+
+<section id="price"><div class="wrap">
+  <div class="sec-h rv"><small>PRICING</small><h2 data-t="priceH">무료로 시작하세요</h2><p data-t="priceP">기본 기능은 계속 무료예요. 더 필요할 때만 프리미엄으로.</p></div>
+  <div class="plans rv">
+    <div class="plan">
+      <h3 data-t="pFree">무료</h3>
+      <div class="pr" data-t="pFreePr">0원</div>
+      <div class="sub" data-t="pFreeSub">설치하면 바로</div>
+      <ul class="chk">
+        <li data-t="pf1">그림 찾아 누르기 · 키 · 드래그 · 휠</li>
+        <li data-t="pf2">🔴 녹화로 만들기</li>
+        <li data-t="pf3">그룹 · 이동 · 다시 하기</li>
+        <li data-t="pf4">가려 둔 창에서 돌리기</li>
+        <li data-t="pf5">.spk 파일로 저장 · 공유</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <h3 data-t="pPro">💎 프리미엄</h3>
+      <div class="sub" data-t="pProSub">무료 기능 전부 + 아래 기능</div>
+      <ul class="chk">
+        <li data-t="pp1">👁 감시 · ⏰ 예약</li>
+        <li data-t="pp2">문자로 찾기 · 색(RGB)으로 찾기</li>
+        <li data-t="pp3">채팅 · 카카오톡 보내기</li>
+      </ul>
+      <div class="prices">
+        <div><b data-t="pm1">1개월</b><span data-t="pm1p">4,900원</span></div>
+        <div><b data-t="pm3">3개월<em>월 4,300원꼴</em></b><span data-t="pm3p">12,900원</span></div>
+        <div class="best"><b data-t="pLife">평생<em>한 번 결제</em></b><span data-t="pLifep">29,000원</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="install" class="alt"><div class="wrap">
+  <div class="sec-h rv"><small>INSTALL</small><h2 data-t="instH">1분이면 끝나요</h2><p data-t="instP">설치 후에는 켤 때마다 새 버전을 확인하고 알아서 업데이트해요.</p></div>
+  <div class="steps rv">
+    <div class="step"><b data-t="s1">내려받기</b><span data-t="s1d">위의 [무료 다운로드] 를 눌러 설치 파일을 받아요.</span></div>
+    <div class="step"><b data-t="s2">실행하기</b><span data-t="s2d">받은 SparkleMacro-Setup.exe 를 더블클릭해요.</span></div>
+    <div class="step"><b data-t="s3">다음 · 설치</b><span data-t="s3d">안내대로 [다음] 만 누르면 돼요. 입력 드라이버도 함께 설치돼요.</span></div>
+    <div class="step"><b data-t="s4">바탕화면에서 시작</b><span data-t="s4d">스파클 매크로 아이콘을 눌러 켜고, ❓ 튜토리얼을 따라 해 보세요.</span></div>
+  </div>
+  <div class="ss rv">
+    <div class="ssbox" aria-hidden="true">
+      <h4 data-t="ssH4">Windows의 PC 보호</h4>
+      <p data-t="ssP">Microsoft Defender SmartScreen에서 인식할 수 없는 앱의 시작을 차단했습니다.</p>
+      <span class="more" data-t="ssMore">추가 정보</span>
+      <div class="bt"><span class="run" data-t="ssRun">실행</span><span data-t="ssNo">실행 안 함</span></div>
+    </div>
+    <div>
+      <h3 data-t="ssH">이 창이 나와도 괜찮아요</h3>
+      <p data-t="ssBody">새로 나온 개인 개발 프로그램이라 Windows가 아직 잘 몰라서 띄우는 창이에요. <b>[추가 정보]</b> 를 누른 뒤 <b>[실행]</b> 을 누르면 설치가 이어져요. 설치 파일은 꼭 이 페이지에서만 받아 주세요.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-h rv"><small>FAQ</small><h2 data-t="faqH">궁금한 점</h2></div>
+  <div class="faq rv">
+    <details><summary data-t="q1">정말 무료인가요?</summary><p data-t="a1">네. 그림 찾아 누르기, 녹화, 그룹, 가려 둔 창에서 돌리기 같은 기본 기능은 기간 제한 없이 무료예요. 감시·예약·문자/색 찾기·메시지 보내기가 필요할 때만 프리미엄을 쓰면 돼요.</p></details>
+    <details><summary data-t="q2">어떤 PC에서 되나요?</summary><p data-t="a2">Windows 10 · 11 (64비트) 에서 돼요. 맥과 휴대폰은 지원하지 않아요.</p></details>
+    <details><summary data-t="q3">창을 옮기거나 해상도가 달라도 되나요?</summary><p data-t="a3">좌표가 아니라 그림으로 찾기 때문에 창 위치가 바뀌어도 다시 찾아내요. 화면 배율이나 해상도가 크게 바뀌면 그림을 한 번 다시 찍어 주세요.</p></details>
+    <details><summary data-t="q4">매크로가 도는 동안 컴퓨터를 써도 되나요?</summary><p data-t="a4">대상 창을 지정하고 실행 방식을 고르면 그 창을 가려 둔 채로 돌릴 수 있어요. 실제 마우스를 쓰는 방식이라도 사용자가 마우스·키보드를 잡으면 손을 뗄 때까지 기다렸다가 이어서 해요.</p></details>
+    <details><summary data-t="q5">멈추고 싶을 땐요?</summary><p data-t="a5">F10 을 누르면 바로 멈춰요. 단축키는 설정에서 바꿀 수 있어요.</p></details>
+    <details><summary data-t="q6">만든 매크로를 친구에게 줄 수 있나요?</summary><p data-t="a6">[📁 파일 ▾] → 저장하면 단계와 그림이 .spk 파일 하나에 담겨요. 그 파일을 보내 주면 그대로 불러와 쓸 수 있어요.</p></details>
+    <details><summary data-t="q7">게임에 써도 되나요?</summary><p data-t="a7">게임이나 서비스마다 자동 입력 프로그램을 금지하는 약관이 있을 수 있어요. 쓰려는 곳의 약관과 규정을 먼저 확인하고, 본인 책임 아래 사용해 주세요.</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="final rv">
+    <img src="../icon.png" alt="">
+    <h2 data-t="finH">반복은 맡기고, 시간은 돌려받으세요</h2>
+    <p data-t="finP">지금 무료로 받아서 첫 매크로를 만들어 보세요.</p>
+    <div class="btns">
+      <a class="btn btn-gold dl" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        <span class="t" data-t="dl2">무료 다운로드<small>Windows 10 · 11</small></span>
+      </a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p>© <a href="https://sparklekorea.com/">Sparkle Korea</a> · <span data-t="brand">스파클 매크로</span> · <a href="https://github.com/sparklekorea/macro-pc/releases" data-t="ftAll">모든 버전</a> · <a href="../privacy.html" data-t="ftPriv">개인정보처리방침</a></p>
+  <p data-t="ftNote">게임·서비스의 약관과 규정을 확인한 뒤 본인 책임 아래 사용해 주세요.</p>
+</div></footer>
+
+<script>
+// 다운로드: 언제나 최신 설치 파일
+var DL = 'https://github.com/sparklekorea/macro-pc/releases/latest/download/SparkleMacro-Setup.exe';
+document.querySelectorAll('.dl').forEach(function (a) { a.href = DL; });
+// 스크롤하면 살짝 떠오르기
+var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+  es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+}, { threshold: .12 }) : null;
+document.querySelectorAll('.rv').forEach(function (el) { io ? io.observe(el) : el.classList.add('on'); });
+
+// ===== 스파클코리아 공통 언어 처리 (sparklekorea.com · calendar · macro · dmx 모두 같은 코드) =====
+// 고른 언어를 sparklekorea.com 전체가 함께 기억합니다 (쿠키 domain=.sparklekorea.com).
+// 다른 스파클코리아 사이트로 가는 링크에는 ?lang= 을 붙여서, 사이트를 옮겨도 언어가 그대로입니다.
+// 처음 오면 브라우저 언어 → 지원 안 하는 언어면 영어.
+var SK_LANGS = [['ko', '한국어'], ['en', 'English'], ['ja', '日本語'], ['zh', '中文'], ['es', 'Español'], ['pt', 'Português'], ['de', 'Deutsch']];
+function skOk(x) { return SK_LANGS.some(function (l) { return l[0] === x; }); }
+function skDetect() {
+  var q = null;
+  try { q = new URLSearchParams(location.search).get('lang'); } catch (e) {}
+  if (skOk(q)) return q;
+  var pl = document.documentElement.getAttribute('data-sk-page');
+  if (skOk(pl)) return pl;
+  var m = document.cookie.match(/(?:^|; )sk_lang=([a-z]{2})/);
+  if (m && skOk(m[1])) return m[1];
+  try { var s = localStorage.getItem('lang'); if (skOk(s)) return s; } catch (e) {}
+  var n = String(navigator.language || 'en').slice(0, 2).toLowerCase();
+  return skOk(n) ? n : 'en';
+}
+function skSave(l) {
+  var dom = /(^|\.)sparklekorea\.com$/.test(location.hostname) ? '; domain=.sparklekorea.com' : '';
+  document.cookie = 'sk_lang=' + l + dom + '; path=/; max-age=31536000; SameSite=Lax';
+  try { localStorage.setItem('lang', l); } catch (e) {}
+}
+// 스파클코리아 사이트끼리 가는 링크에 지금 언어를 붙임 (?lang=xx)
+function skLinks(l) {
+  document.querySelectorAll('a[href]').forEach(function (a) {
+    try {
+      var u = new URL(a.getAttribute('href'), location.href);
+      if (!/(^|\.)sparklekorea\.com$/.test(u.hostname) || u.hostname === location.hostname) return;
+      var p = u.pathname, lp = (p.length === 4 && p.charAt(0) === '/' && p.charAt(3) === '/') ? p.slice(1, 3) : null; if (p === '/' || (lp && skOk(lp))) { u.pathname = l === 'ko' ? '/' : '/' + l + '/'; u.searchParams.delete('lang'); if (l === 'ko') u.searchParams.set('lang', 'ko'); } /* sk-lang-path */ else u.searchParams.set('lang', l);
+      a.href = u.toString();
+    } catch (e) {}
+  });
+}
+// <select id="lang" class="lang"> 를 7개 언어로 채우고, 바꾸면 onChange(언어) 를 부름
+function skPicker(sel, cur, onChange) {
+  sel.innerHTML = SK_LANGS.map(function (l) { return '<option value="' + l[0] + '"' + (l[0] === cur ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('');
+  sel.onchange = function () { skSave(sel.value); var pg = document.documentElement.getAttribute('data-sk-page'); if (pg) { try { history.replaceState(null, '', sel.value === 'ko' ? '../' : '../' + sel.value + '/'); document.documentElement.setAttribute('data-sk-page', sel.value === 'ko' ? '' : sel.value); } catch (e) {} } /* sk-lang-url */ onChange(sel.value); };
+}
+// ===== 공통 언어 처리 끝 =====
+
+// ===== 언어 =====
+// 한국어는 지금 화면 글자를 그대로 모아 둠
+var KO = {};
+document.querySelectorAll('[data-t]').forEach(function (el) { KO[el.getAttribute('data-t')] = el.innerHTML; });
+var TITLE = {
+  ko: document.title,
+  en: 'Sparkle Macro — auto clicker that finds and clicks images',
+  ja: 'Sparkle Macro — 画像を見つけて代わりにクリックする自動クリック',
+  zh: 'Sparkle Macro — 找到图片替你点击的自动点击器',
+  es: 'Sparkle Macro — autoclicker que encuentra imágenes y hace clic',
+  pt: 'Sparkle Macro — autoclicker que encontra imagens e clica por você',
+  de: 'Sparkle Macro — Autoklicker, der Bilder findet und klickt'
+};
+// 모든 외국어에 같은 값 (브랜드·가격)
+var COMMON = { brand: 'Sparkle Macro', pFreePr: '₩0', pm1p: '₩4,900', pm3p: '₩12,900', pLifep: '₩29,000' };
+var T = {
+  en: {
+    nav1: 'Features', nav2: 'Pricing', nav3: 'Install', nav4: 'FAQ', navdl: 'Free download',
+    badge: 'Windows 10 · 11 · Free to start',
+    h1: 'When it shows up on screen,<br><span class="gold">your PC does the clicking</span>',
+    lead: 'Snap a picture of the button to press, and Sparkle Macro finds it on screen and clicks it for you. It finds it again even if the window moves, and if you show it once, it records what you do as steps.',
+    dl1: 'Free download<small>Windows installer</small>', how: 'How does it work?',
+    note: 'v1.0.27 · about 80 MB · updates itself when a new version is out',
+    fTg: 'Start game', fB: 'Image found → click', fS: 'Match 98%',
+    howH: 'Three steps and you’re done', howP: 'No coding needed. Just show it where to click.',
+    f1: 'Snap a picture', f1d: 'Drag the mouse over the button or icon to capture it. Or just show it with 🔴 Record.',
+    f2: 'Set the order', f2d: 'Stack find-and-click, key presses and waits in any order you like.',
+    f3: 'Press start', f3d: 'Press F10 once to start, and again to stop right away.',
+    featH: 'Hand off the repetitive work', featP: 'From simple to smart — use only what you need.',
+    c1: 'Find &amp; click images', c1d: 'It looks for pictures, not coordinates. Move the window and it still finds them.',
+    c2: '🔴 Build by recording', c2d: 'Click and type as usual and it turns into steps. It even names them for you.',
+    c3: 'Works in hidden windows', c3d: 'Pick a target window and it runs even behind other windows. Meanwhile, use your PC for other things.',
+    c4: 'Groups &amp; flow', c4d: 'Bundle steps into groups and switch them on/off with ☑/☐. Jump when found, retry when not.',
+    c5: '👁 Watch <span class="tag">Premium</span>', c5d: 'Keeps an eye on the screen and acts only when a condition is met. Your task pauses meanwhile, then carries on.',
+    c6: '⏰ Schedule <span class="tag">Premium</span>', c6d: 'Switch, start or stop tasks at set times. Daily morning check-ins, too.',
+    c7: 'Find by text &amp; color <span class="tag">Premium</span>', c7d: 'Reads text on screen to find things, or clicks when a certain color appears.',
+    c8: 'Stop anytime with F10', c8d: 'One key stops it instantly. Grab the mouse yourself and it waits until you let go.',
+    w1h: 'Watching, acting only when needed', w1p: 'Like the moment your HP drops or a popup appears — when a chosen image shows up, it runs the action you set for it.',
+    w1a: 'Watches several items at the same time', w1b: 'While a watch runs, your task finishes its current step and pauses', w1c: 'A cooldown keeps it calm when the same thing happens again and again',
+    w2h: 'On its own, right on time', w2p: 'Check in at 6 AM, close the program at 11:30 PM — set up a timetable and it sticks to it.',
+    w2a: 'Build and run steps right inside a schedule', w2b: 'Run only the groups you pick from a task', w2c: 'Lets you know on Discord or Telegram when it’s done',
+    priceH: 'Start for free', priceP: 'The basics stay free. Go Premium only when you need more.',
+    pFree: 'Free', pFreeSub: 'Ready as soon as you install',
+    pf1: 'Find &amp; click images · keys · drag · wheel', pf2: '🔴 Build by recording', pf3: 'Groups · jump · retry', pf4: 'Run in hidden windows', pf5: 'Save &amp; share as .spk files',
+    pPro: '💎 Premium', pProSub: 'Everything in Free + the features below',
+    pp1: '👁 Watch · ⏰ Schedule', pp2: 'Find by text · find by color (RGB)', pp3: 'Send to chat · KakaoTalk',
+    pm1: '1 month', pm3: '3 months<em>≈ ₩4,300/mo</em>', pLife: 'Lifetime<em>one-time payment</em>',
+    instH: 'Done in a minute', instP: 'Once installed, it checks for a new version every time it starts and updates itself.',
+    s1: 'Download', s1d: 'Press [Free download] above to get the installer.',
+    s2: 'Run it', s2d: 'Double-click the downloaded SparkleMacro-Setup.exe.',
+    s3: 'Next · Install', s3d: 'Just keep pressing [Next]. The input driver is installed along with it.',
+    s4: 'Start from the desktop', s4d: 'Click the Sparkle Macro icon to open it, then follow the ❓ tutorial.',
+    ssH4: 'Windows protected your PC', ssP: 'Microsoft Defender SmartScreen prevented an unrecognized app from starting.', ssMore: 'More info', ssRun: 'Run anyway', ssNo: 'Don’t run',
+    ssH: 'Seeing this window is okay',
+    ssBody: 'It’s a new program from an independent developer, so Windows doesn’t know it well yet. Press <b>[More info]</b>, then <b>[Run anyway]</b>, and the install continues. Please download the installer only from this page.',
+    faqH: 'Questions',
+    q1: 'Is it really free?', a1: 'Yes. Basic features like find &amp; click images, recording, groups and running in hidden windows are free with no time limit. You only need Premium for watch, schedule, text/color search and sending messages.',
+    q2: 'Which PCs does it run on?', a2: 'Windows 10 · 11 (64-bit). Mac and phones are not supported.',
+    q3: 'What if I move the window or the resolution changes?', a3: 'It finds things by picture, not coordinates, so it finds them again even when the window moves. If the display scale or resolution changes a lot, just capture the pictures again.',
+    q4: 'Can I use my PC while the macro runs?', a4: 'Set a target window and pick a run mode, and it can run with that window hidden. Even in real-mouse mode, if you grab the mouse or keyboard, it waits until you let go and then carries on.',
+    q5: 'How do I stop it?', a5: 'Press F10 and it stops right away. You can change the shortcut in Settings.',
+    q6: 'Can I give my macro to a friend?', a6: 'Save it via [📁 File ▾] and the steps and pictures go into a single .spk file. Send that file and they can load and use it as is.',
+    q7: 'Can I use it in games?', a7: 'Some games and services have terms that ban automated input programs. Check the terms and rules of wherever you plan to use it first, and use it at your own responsibility.',
+    finH: 'Hand off the repeats, get your time back', finP: 'Download it free now and build your first macro.',
+    dl2: 'Free download<small>Windows 10 · 11</small>',
+    ftAll: 'All versions', ftPriv: 'Privacy policy (Korean)', ftNote: 'Please check the terms and rules of games and services, and use it at your own responsibility.'
+  },
+  ja: {
+    nav1: '機能', nav2: '料金', nav3: 'インストール', nav4: 'よくある質問', navdl: '無料ダウンロード',
+    badge: 'Windows 10 · 11 · 無料で始められる',
+    h1: '画面に画像が見えたら、<br><span class="gold">クリックはPCにおまかせ</span>',
+    lead: '押したいボタンを画像で撮っておくと、Sparkle Macro が画面から見つけて代わりに押してくれます。ウィンドウが少し動いても見つけ直し、一度やって見せればそのまま録画してステップにしてくれます。',
+    dl1: '無料ダウンロード<small>Windows インストーラー</small>', how: '使い方は？',
+    note: 'v1.0.27 · 約80MB · 新しいバージョンは自動でアップデート',
+    fTg: 'ゲーム開始', fB: '画像を発見 → クリック', fS: '一致度 98%',
+    howH: '3ステップで完了', howP: 'プログラミングの知識は不要。押す場所を見せるだけです。',
+    f1: '画像で撮る', f1d: '押したいボタンやアイコンをマウスでドラッグして撮影。または 🔴 録画で実際にやって見せます。',
+    f2: '順番を決める', f2d: '画像を探して押す、キーを押す、待つを好きな順に積み重ねます。',
+    f3: 'スタートを押す', f3d: 'F10 を1回押せばスタート、もう一度押せばすぐ停止。',
+    featH: '繰り返し作業はおまかせ', featP: 'かんたんなものから賢いものまで、必要な分だけどうぞ。',
+    c1: '画像を探してクリック', c1d: '座標ではなく画像で探します。ウィンドウを動かしても見つけ直します。',
+    c2: '🔴 録画で作成', c2d: 'クリックやキー入力をやって見せれば、そのままステップに。名前も自動で付けます。',
+    c3: '隠したウィンドウでも', c3d: '対象ウィンドウを決めれば、ほかのウィンドウの裏に隠したまま動かせます。その間PCは別の作業に。',
+    c4: 'グループ・フロー整理', c4d: 'ステップをグループにまとめ、☑/☐ でオン・オフ。見つかったら移動、見つからなければやり直しも。',
+    c5: '👁 監視 <span class="tag">プレミアム</span>', c5d: '画面を見張り、条件が合ったときだけ実行。その間、作業は一時停止してから再開します。',
+    c6: '⏰ 予約 <span class="tag">プレミアム</span>', c6d: '決めた時刻に作業を切り替えたり、開始・終了したり。毎朝のログインボーナスも。',
+    c7: '文字・色で探す <span class="tag">プレミアム</span>', c7d: '画面の文字を読んで探したり、特定の色が見えたら押したりします。',
+    c8: 'いつでも F10 で停止', c8d: 'キーひとつですぐ停止。マウスを自分で握ると、手を離すまで待ちます。',
+    w1h: '見張って、必要なときだけ', w1p: '体力が減ったときや通知ウィンドウが出た瞬間のように、決めた画像が見えたときだけ、別に決めた動作をします。',
+    w1a: '複数の監視項目を同時に見張ります', w1b: '監視中、作業は今のステップを終えて一時停止します', w1c: '同じ状況が続いても待ち時間（クールダウン）で調整できます',
+    w2h: '決めた時刻に自動で', w2p: '朝6時にログインボーナス、夜11時30分にプログラム終了のように、時間割を組めばそのとおりに動きます。',
+    w2a: '予約の中で直接ステップを作って実行', w2b: '作業の中から好きなグループだけ選んで実行できます', w2c: '終わったら Discord・Telegram でお知らせ',
+    priceH: '無料で始めましょう', priceP: '基本機能はずっと無料。もっと必要なときだけプレミアムに。',
+    pFree: '無料', pFreeSub: 'インストールしてすぐ',
+    pf1: '画像を探してクリック · キー · ドラッグ · ホイール', pf2: '🔴 録画で作成', pf3: 'グループ · 移動 · やり直し', pf4: '隠したウィンドウで実行', pf5: '.spk ファイルで保存 · 共有',
+    pPro: '💎 プレミアム', pProSub: '無料機能すべて + 以下の機能',
+    pp1: '👁 監視 · ⏰ 予約', pp2: '文字で探す · 色（RGB）で探す', pp3: 'チャット · カカオトーク送信',
+    pm1: '1か月', pm3: '3か月<em>月あたり約 ₩4,300</em>', pLife: '永久<em>1回払い</em>',
+    instH: '1分で完了', instP: 'インストール後は、起動するたびに新しいバージョンを確認して自動でアップデートします。',
+    s1: 'ダウンロード', s1d: '上の［無料ダウンロード］を押してインストーラーを入手します。',
+    s2: '実行', s2d: 'ダウンロードした SparkleMacro-Setup.exe をダブルクリック。',
+    s3: '次へ · インストール', s3d: '案内どおり［次へ］を押すだけ。入力ドライバーも一緒にインストールされます。',
+    s4: 'デスクトップから起動', s4d: 'Sparkle Macro のアイコンで起動し、❓ チュートリアルに沿って試してみてください。',
+    ssH4: 'Windows によって PC が保護されました', ssP: 'Microsoft Defender SmartScreen は認識されないアプリの起動を停止しました。', ssMore: '詳細情報', ssRun: '実行', ssNo: '実行しない',
+    ssH: 'この画面が出ても大丈夫',
+    ssBody: '個人開発の新しいプログラムなので、Windows がまだよく知らずに表示する画面です。<b>［詳細情報］</b>を押してから<b>［実行］</b>を押すとインストールが続きます。インストーラーは必ずこのページからダウンロードしてください。',
+    faqH: 'よくある質問',
+    q1: '本当に無料ですか？', a1: 'はい。画像を探してクリック、録画、グループ、隠したウィンドウでの実行などの基本機能は期間制限なしで無料です。監視・予約・文字/色検索・メッセージ送信が必要なときだけプレミアムをどうぞ。',
+    q2: 'どんなPCで使えますか？', a2: 'Windows 10 · 11（64ビット）で使えます。Mac とスマートフォンには対応していません。',
+    q3: 'ウィンドウを動かしたり解像度が違っても大丈夫？', a3: '座標ではなく画像で探すので、ウィンドウの位置が変わっても見つけ直します。表示倍率や解像度が大きく変わったら、画像を一度撮り直してください。',
+    q4: 'マクロの実行中にPCを使えますか？', a4: '対象ウィンドウを指定して実行方式を選べば、そのウィンドウを隠したまま動かせます。実際のマウスを使う方式でも、マウスやキーボードを触ると手を離すまで待ってから続けます。',
+    q5: '止めたいときは？', a5: 'F10 を押すとすぐ止まります。ショートカットは設定で変更できます。',
+    q6: '作ったマクロを友だちにあげられますか？', a6: '［📁 ファイル ▾］→ 保存すると、ステップと画像が .spk ファイル1つにまとまります。そのファイルを送れば、そのまま読み込んで使えます。',
+    q7: 'ゲームに使ってもいいですか？', a7: 'ゲームやサービスによっては、自動入力プログラムを禁止する規約がある場合があります。使う場所の規約やルールを先に確認し、自己責任でご利用ください。',
+    finH: '繰り返しはまかせて、時間を取り戻そう', finP: '今すぐ無料でダウンロードして、最初のマクロを作ってみましょう。',
+    dl2: '無料ダウンロード<small>Windows 10 · 11</small>',
+    ftAll: 'すべてのバージョン', ftPriv: 'プライバシーポリシー（韓国語）', ftNote: 'ゲーム・サービスの規約やルールを確認のうえ、自己責任でご利用ください。'
+  },
+  zh: {
+    nav1: '功能', nav2: '价格', nav3: '安装', nav4: '常见问题', navdl: '免费下载',
+    badge: 'Windows 10 · 11 · 免费开始',
+    h1: '屏幕上出现图片时，<br><span class="gold">点击交给电脑</span>',
+    lead: '把要点的按钮截成图片，Sparkle Macro 就会在屏幕上找到它并替你点击。窗口稍微移动也能重新找到；你亲自操作一遍，它就会录下来变成步骤。',
+    dl1: '免费下载<small>Windows 安装程序</small>', how: '怎么使用？',
+    note: 'v1.0.27 · 约 80MB · 有新版本时自动更新',
+    fTg: '开始游戏', fB: '找到图片 → 点击', fS: '相似度 98%',
+    howH: '三步搞定', howP: '不懂编程也没关系，只要告诉它点哪里。',
+    f1: '截取图片', f1d: '用鼠标拖动截取要点的按钮或图标。也可以用 🔴 录制亲自演示。',
+    f2: '安排顺序', f2d: '把找图点击、按键、等待按你想要的顺序叠起来。',
+    f3: '按下开始', f3d: '按一次 F10 开始，再按一次立即停止。',
+    featH: '把重复的工作交给它', featP: '从简单到智能，按需取用。',
+    c1: '找图点击', c1d: '不是靠坐标，而是靠图片寻找。窗口移动了也能重新找到。',
+    c2: '🔴 录制生成', c2d: '亲自点击、按键演示一遍就变成步骤，名称也会自动取好。',
+    c3: '窗口被遮住也能运行', c3d: '指定目标窗口后，即使藏在其他窗口后面也能运行。这期间电脑可以做别的事。',
+    c4: '分组与流程', c4d: '把步骤分组，用 ☑/☐ 开关。找到就跳转，找不到就重试。',
+    c5: '👁 监视 <span class="tag">高级版</span>', c5d: '盯着屏幕，只在条件满足时执行。期间任务会暂停，之后继续。',
+    c6: '⏰ 定时 <span class="tag">高级版</span>', c6d: '在设定时间切换、开始或结束任务。每天早上的签到也没问题。',
+    c7: '按文字·颜色查找 <span class="tag">高级版</span>', c7d: '读取屏幕上的文字来查找，或在出现特定颜色时点击。',
+    c8: '随时按 F10 停止', c8d: '一个键立即停止。你亲自握住鼠标时，它会等你松手。',
+    w1h: '一直盯着，只在需要时出手', w1p: '比如血量变低或弹出提示窗口的瞬间——一旦出现设定的图片，就执行另外设定的动作。',
+    w1a: '同时监视多个项目', w1b: '监视运行期间，任务会做完当前步骤后暂停', w1c: '同样的情况接连出现时，用冷却时间来控制',
+    w2h: '到点自动执行', w2p: '早上 6 点签到、晚上 11 点 30 分关闭程序——排好时间表，它就照做。',
+    w2a: '在定时里直接创建并运行步骤', w2b: '可只挑选任务中的部分分组运行', w2c: '完成后通过 Discord、Telegram 通知你',
+    priceH: '免费开始', priceP: '基础功能一直免费。需要更多时再升级高级版。',
+    pFree: '免费', pFreeSub: '安装即可使用',
+    pf1: '找图点击 · 按键 · 拖动 · 滚轮', pf2: '🔴 录制生成', pf3: '分组 · 跳转 · 重试', pf4: '在被遮住的窗口中运行', pf5: '保存为 .spk 文件 · 分享',
+    pPro: '💎 高级版', pProSub: '全部免费功能 + 以下功能',
+    pp1: '👁 监视 · ⏰ 定时', pp2: '按文字查找 · 按颜色（RGB）查找', pp3: '发送到聊天 · KakaoTalk',
+    pm1: '1 个月', pm3: '3 个月<em>约 ₩4,300/月</em>', pLife: '终身<em>一次付清</em>',
+    instH: '1 分钟搞定', instP: '安装后每次启动都会检查新版本并自动更新。',
+    s1: '下载', s1d: '点击上方的［免费下载］获取安装程序。',
+    s2: '运行', s2d: '双击下载的 SparkleMacro-Setup.exe。',
+    s3: '下一步 · 安装', s3d: '按提示一直点［下一步］即可。输入驱动也会一起安装。',
+    s4: '从桌面启动', s4d: '点击 Sparkle Macro 图标打开，跟着 ❓ 教程试试看。',
+    ssH4: 'Windows 已保护你的电脑', ssP: 'Microsoft Defender SmartScreen 阻止了无法识别的应用启动。', ssMore: '更多信息', ssRun: '仍要运行', ssNo: '不运行',
+    ssH: '出现这个窗口也没关系',
+    ssBody: '这是个人开发的新程序，Windows 还不太了解它，所以会弹出这个窗口。点击<b>［更多信息］</b>，再点<b>［仍要运行］</b>，安装就会继续。请务必只从本页面下载安装程序。',
+    faqH: '常见问题',
+    q1: '真的免费吗？', a1: '是的。找图点击、录制、分组、在被遮住的窗口中运行等基础功能免费且没有期限。只有需要监视、定时、文字/颜色查找、发送消息时才需要高级版。',
+    q2: '支持哪些电脑？', a2: '支持 Windows 10 · 11（64 位）。不支持 Mac 和手机。',
+    q3: '移动窗口或分辨率不同也可以吗？', a3: '因为是按图片而不是坐标查找，窗口位置变了也能重新找到。如果屏幕缩放或分辨率变化很大，请重新截一次图。',
+    q4: '宏运行时可以用电脑吗？', a4: '指定目标窗口并选择运行方式后，可以让该窗口保持被遮住的状态运行。即使是使用真实鼠标的方式，你一碰鼠标或键盘，它也会等你松手后再继续。',
+    q5: '想停止时怎么办？', a5: '按 F10 立即停止。快捷键可以在设置中修改。',
+    q6: '做好的宏可以给朋友吗？', a6: '通过［📁 文件 ▾］→ 保存，步骤和图片会打包成一个 .spk 文件。把文件发给对方，就能直接导入使用。',
+    q7: '可以用在游戏里吗？', a7: '有些游戏或服务的条款禁止使用自动输入程序。请先确认使用场所的条款和规定，并自行承担责任使用。',
+    finH: '重复交给它，时间还给你', finP: '现在免费下载，做出你的第一个宏吧。',
+    dl2: '免费下载<small>Windows 10 · 11</small>',
+    ftAll: '所有版本', ftPriv: '隐私政策（韩语）', ftNote: '请确认游戏和服务的条款与规定后，自行承担责任使用。'
+  },
+  es: {
+    nav1: 'Funciones', nav2: 'Precios', nav3: 'Instalar', nav4: 'Preguntas', navdl: 'Descarga gratis',
+    badge: 'Windows 10 · 11 · Empieza gratis',
+    h1: 'Cuando aparece en pantalla,<br><span class="gold">tu PC hace el clic</span>',
+    lead: 'Captura una imagen del botón que quieres pulsar y Sparkle Macro lo encuentra en pantalla y hace clic por ti. Lo vuelve a encontrar aunque la ventana se mueva, y si lo haces tú una vez, lo graba y lo convierte en pasos.',
+    dl1: 'Descarga gratis<small>Instalador para Windows</small>', how: '¿Cómo funciona?',
+    note: 'v1.0.27 · unos 80 MB · se actualiza solo cuando sale una versión nueva',
+    fTg: 'Iniciar juego', fB: 'Imagen encontrada → clic', fS: 'Coincidencia 98%',
+    howH: 'Listo en tres pasos', howP: 'No necesitas saber programar. Solo muéstrale dónde hacer clic.',
+    f1: 'Captura una imagen', f1d: 'Arrastra el ratón sobre el botón o icono para capturarlo. O muéstraselo tú con 🔴 Grabar.',
+    f2: 'Define el orden', f2d: 'Apila buscar y hacer clic, pulsar teclas y esperar en el orden que quieras.',
+    f3: 'Pulsa iniciar', f3d: 'Pulsa F10 una vez para empezar y otra vez para parar al instante.',
+    featH: 'Deja el trabajo repetitivo en sus manos', featP: 'De lo más sencillo a lo más inteligente: usa solo lo que necesites.',
+    c1: 'Buscar imagen y clic', c1d: 'Busca por imagen, no por coordenadas. Si mueves la ventana, la vuelve a encontrar.',
+    c2: '🔴 Crear grabando', c2d: 'Haz clic y escribe como siempre y se convierte en pasos. Hasta les pone nombre.',
+    c3: 'También en ventanas ocultas', c3d: 'Elige una ventana y funciona aunque esté detrás de otras. Mientras, usa tu PC para otras cosas.',
+    c4: 'Grupos y flujo', c4d: 'Agrupa pasos y actívalos o desactívalos con ☑/☐. Salta si lo encuentra, reintenta si no.',
+    c5: '👁 Vigilar <span class="tag">Premium</span>', c5d: 'Vigila la pantalla y actúa solo cuando se cumple una condición. Mientras, la tarea se pausa y luego sigue.',
+    c6: '⏰ Programar <span class="tag">Premium</span>', c6d: 'Cambia, inicia o detiene tareas a la hora fijada. También el check-in de cada mañana.',
+    c7: 'Buscar texto y color <span class="tag">Premium</span>', c7d: 'Lee el texto de la pantalla para buscar, o hace clic cuando aparece un color concreto.',
+    c8: 'Para cuando quieras con F10', c8d: 'Una tecla lo detiene al instante. Si coges el ratón, espera hasta que lo sueltes.',
+    w1h: 'Vigila y actúa solo cuando hace falta', w1p: 'Como cuando baja tu vida o aparece una ventana de aviso: al ver la imagen elegida, hace la acción que le asignaste.',
+    w1a: 'Vigila varios elementos a la vez', w1b: 'Mientras vigila, la tarea termina su paso actual y se pausa', w1c: 'Si la misma situación se repite, lo controla con un tiempo de espera (cooldown)',
+    w2h: 'Solo, a la hora exacta', w2p: 'Check-in a las 6 de la mañana, cerrar el programa a las 23:30: arma un horario y lo cumple.',
+    w2a: 'Crea y ejecuta pasos dentro de la programación', w2b: 'Ejecuta solo los grupos que elijas de una tarea', w2c: 'Te avisa por Discord o Telegram al terminar',
+    priceH: 'Empieza gratis', priceP: 'Lo básico sigue siendo gratis. Pasa a Premium solo cuando necesites más.',
+    pFree: 'Gratis', pFreeSub: 'Listo al instalar',
+    pf1: 'Buscar imagen y clic · teclas · arrastrar · rueda', pf2: '🔴 Crear grabando', pf3: 'Grupos · saltar · reintentar', pf4: 'Funciona en ventanas ocultas', pf5: 'Guarda y comparte en archivos .spk',
+    pPro: '💎 Premium', pProSub: 'Todo lo gratis + estas funciones',
+    pp1: '👁 Vigilar · ⏰ Programar', pp2: 'Buscar por texto · por color (RGB)', pp3: 'Enviar a chat · KakaoTalk',
+    pm1: '1 mes', pm3: '3 meses<em>≈ ₩4,300/mes</em>', pLife: 'De por vida<em>pago único</em>',
+    instH: 'Listo en un minuto', instP: 'Tras instalarlo, busca una versión nueva cada vez que se abre y se actualiza solo.',
+    s1: 'Descarga', s1d: 'Pulsa [Descarga gratis] arriba para bajar el instalador.',
+    s2: 'Ábrelo', s2d: 'Haz doble clic en el SparkleMacro-Setup.exe descargado.',
+    s3: 'Siguiente · Instalar', s3d: 'Solo pulsa [Siguiente]. El controlador de entrada se instala también.',
+    s4: 'Inicia desde el escritorio', s4d: 'Abre el icono de Sparkle Macro y sigue el tutorial ❓.',
+    ssH4: 'Windows protegió su PC', ssP: 'Microsoft Defender SmartScreen impidió el inicio de una aplicación no reconocida.', ssMore: 'Más información', ssRun: 'Ejecutar de todas formas', ssNo: 'No ejecutar',
+    ssH: 'No pasa nada si ves esta ventana',
+    ssBody: 'Es un programa nuevo de un desarrollador independiente y Windows aún no lo conoce bien, por eso muestra esta ventana. Pulsa <b>[Más información]</b> y luego <b>[Ejecutar de todas formas]</b> para seguir con la instalación. Descarga el instalador solo desde esta página.',
+    faqH: 'Preguntas frecuentes',
+    q1: '¿De verdad es gratis?', a1: 'Sí. Las funciones básicas como buscar imagen y clic, grabar, grupos y funcionar en ventanas ocultas son gratis y sin límite de tiempo. Premium solo hace falta para vigilar, programar, buscar texto/color y enviar mensajes.',
+    q2: '¿En qué PC funciona?', a2: 'En Windows 10 · 11 (64 bits). No es compatible con Mac ni con móviles.',
+    q3: '¿Funciona si muevo la ventana o cambia la resolución?', a3: 'Busca por imagen, no por coordenadas, así que la encuentra aunque la ventana cambie de sitio. Si la escala o la resolución cambian mucho, vuelve a capturar la imagen.',
+    q4: '¿Puedo usar el PC mientras corre la macro?', a4: 'Si eliges una ventana y un modo de ejecución, puede funcionar con esa ventana oculta. Incluso en el modo con ratón real, si tocas el ratón o el teclado, espera a que los sueltes y luego sigue.',
+    q5: '¿Y si quiero pararla?', a5: 'Pulsa F10 y se detiene al instante. Puedes cambiar el atajo en Ajustes.',
+    q6: '¿Puedo pasarle mi macro a un amigo?', a6: 'Con [📁 Archivo ▾] → Guardar, los pasos y las imágenes quedan en un solo archivo .spk. Envíalo y tu amigo podrá abrirlo y usarlo tal cual.',
+    q7: '¿Puedo usarlo en juegos?', a7: 'Algunos juegos y servicios prohíben en sus condiciones los programas de entrada automática. Revisa antes sus condiciones y normas, y úsalo bajo tu propia responsabilidad.',
+    finH: 'Deja la repetición y recupera tu tiempo', finP: 'Descárgalo gratis ahora y crea tu primera macro.',
+    dl2: 'Descarga gratis<small>Windows 10 · 11</small>',
+    ftAll: 'Todas las versiones', ftPriv: 'Política de privacidad (en coreano)', ftNote: 'Revisa las condiciones y normas de cada juego o servicio y úsalo bajo tu propia responsabilidad.'
+  },
+  pt: {
+    nav1: 'Recursos', nav2: 'Preços', nav3: 'Instalar', nav4: 'Perguntas', navdl: 'Baixar grátis',
+    badge: 'Windows 10 · 11 · Comece grátis',
+    h1: 'Quando aparece na tela,<br><span class="gold">o PC clica por você</span>',
+    lead: 'Tire uma imagem do botão que quer apertar e o Sparkle Macro o encontra na tela e clica por você. Ele encontra de novo mesmo se a janela se mover, e se você fizer uma vez, ele grava tudo e transforma em etapas.',
+    dl1: 'Baixar grátis<small>Instalador para Windows</small>', how: 'Como funciona?',
+    note: 'v1.0.27 · cerca de 80 MB · atualiza sozinho quando sai uma versão nova',
+    fTg: 'Iniciar jogo', fB: 'Imagem encontrada → clique', fS: 'Semelhança 98%',
+    howH: 'Pronto em três passos', howP: 'Não precisa saber programar. Basta mostrar onde clicar.',
+    f1: 'Capture uma imagem', f1d: 'Arraste o mouse sobre o botão ou ícone para capturar. Ou mostre você mesmo com 🔴 Gravar.',
+    f2: 'Defina a ordem', f2d: 'Empilhe procurar e clicar, apertar teclas e esperar na ordem que quiser.',
+    f3: 'Aperte iniciar', f3d: 'Aperte F10 uma vez para começar e de novo para parar na hora.',
+    featH: 'Deixe o trabalho repetitivo com ele', featP: 'Do simples ao inteligente: use só o que precisar.',
+    c1: 'Procurar imagem e clicar', c1d: 'Procura por imagem, não por coordenadas. Mova a janela e ele encontra de novo.',
+    c2: '🔴 Criar gravando', c2d: 'Clique e digite normalmente e tudo vira etapas. Ele até dá os nomes.',
+    c3: 'Até em janelas escondidas', c3d: 'Escolha a janela-alvo e ele roda mesmo atrás de outras janelas. Enquanto isso, use o PC para outras coisas.',
+    c4: 'Grupos e fluxo', c4d: 'Agrupe etapas e ligue/desligue com ☑/☐. Pula se encontrar, tenta de novo se não.',
+    c5: '👁 Vigiar <span class="tag">Premium</span>', c5d: 'Fica de olho na tela e age só quando a condição é atendida. A tarefa pausa enquanto isso e depois continua.',
+    c6: '⏰ Agendar <span class="tag">Premium</span>', c6d: 'Troca, inicia ou encerra tarefas no horário definido. Até o check-in de toda manhã.',
+    c7: 'Procurar texto e cor <span class="tag">Premium</span>', c7d: 'Lê o texto da tela para procurar, ou clica quando uma cor específica aparece.',
+    c8: 'Pare quando quiser com F10', c8d: 'Uma tecla para tudo na hora. Se você pegar o mouse, ele espera até você soltar.',
+    w1h: 'De olho, agindo só quando precisa', w1p: 'Como quando sua vida fica baixa ou aparece uma janela de aviso: quando a imagem escolhida aparece, ele faz a ação que você definiu.',
+    w1a: 'Vigia vários itens ao mesmo tempo', w1b: 'Enquanto vigia, a tarefa termina a etapa atual e pausa', w1c: 'Se a mesma situação se repetir, um tempo de espera (cooldown) controla isso',
+    w2h: 'Sozinho, na hora certa', w2p: 'Check-in às 6h, fechar o programa às 23h30: monte uma agenda e ele segue à risca.',
+    w2a: 'Crie e rode etapas direto no agendamento', w2b: 'Rode só os grupos que escolher de uma tarefa', w2c: 'Avisa no Discord ou Telegram quando terminar',
+    priceH: 'Comece grátis', priceP: 'O básico continua grátis. Vá para o Premium só quando precisar de mais.',
+    pFree: 'Grátis', pFreeSub: 'Pronto ao instalar',
+    pf1: 'Procurar imagem e clicar · teclas · arrastar · roda', pf2: '🔴 Criar gravando', pf3: 'Grupos · pular · repetir', pf4: 'Roda em janelas escondidas', pf5: 'Salve e compartilhe em arquivos .spk',
+    pPro: '💎 Premium', pProSub: 'Tudo do grátis + os recursos abaixo',
+    pp1: '👁 Vigiar · ⏰ Agendar', pp2: 'Procurar por texto · por cor (RGB)', pp3: 'Enviar para chat · KakaoTalk',
+    pm1: '1 mês', pm3: '3 meses<em>≈ ₩4,300/mês</em>', pLife: 'Vitalício<em>pagamento único</em>',
+    instH: 'Pronto em um minuto', instP: 'Depois de instalado, ele verifica se há versão nova sempre que abre e se atualiza sozinho.',
+    s1: 'Baixe', s1d: 'Clique em [Baixar grátis] acima para baixar o instalador.',
+    s2: 'Execute', s2d: 'Clique duas vezes no SparkleMacro-Setup.exe baixado.',
+    s3: 'Avançar · Instalar', s3d: 'É só clicar em [Avançar]. O driver de entrada é instalado junto.',
+    s4: 'Abra pela área de trabalho', s4d: 'Clique no ícone do Sparkle Macro e siga o tutorial ❓.',
+    ssH4: 'O Windows protegeu o computador', ssP: 'O Microsoft Defender SmartScreen impediu a inicialização de um aplicativo não reconhecido.', ssMore: 'Mais informações', ssRun: 'Executar assim mesmo', ssNo: 'Não executar',
+    ssH: 'Tudo bem se aparecer esta janela',
+    ssBody: 'É um programa novo de um desenvolvedor independente, e o Windows ainda não o conhece bem, por isso mostra esta janela. Clique em <b>[Mais informações]</b> e depois em <b>[Executar assim mesmo]</b> para continuar a instalação. Baixe o instalador somente por esta página.',
+    faqH: 'Perguntas frequentes',
+    q1: 'É grátis mesmo?', a1: 'Sim. Os recursos básicos, como procurar imagem e clicar, gravar, grupos e rodar em janelas escondidas, são grátis e sem limite de tempo. O Premium só é necessário para vigiar, agendar, procurar texto/cor e enviar mensagens.',
+    q2: 'Em que PC funciona?', a2: 'No Windows 10 · 11 (64 bits). Mac e celular não são compatíveis.',
+    q3: 'Funciona se eu mover a janela ou mudar a resolução?', a3: 'Ele procura por imagem, não por coordenadas, então encontra de novo mesmo se a janela mudar de lugar. Se a escala ou a resolução mudarem muito, capture a imagem mais uma vez.',
+    q4: 'Posso usar o PC enquanto a macro roda?', a4: 'Escolha a janela-alvo e o modo de execução, e ela pode rodar com essa janela escondida. Mesmo no modo com mouse real, se você mexer no mouse ou teclado, ela espera você soltar e depois continua.',
+    q5: 'E para parar?', a5: 'Aperte F10 e ela para na hora. Você pode mudar o atalho nas Configurações.',
+    q6: 'Posso passar minha macro para um amigo?', a6: 'Em [📁 Arquivo ▾] → Salvar, as etapas e as imagens ficam num único arquivo .spk. Envie o arquivo e ele poderá abrir e usar do mesmo jeito.',
+    q7: 'Posso usar em jogos?', a7: 'Alguns jogos e serviços proíbem programas de entrada automática nos termos de uso. Confira antes os termos e regras de onde vai usar e use por sua conta e risco.',
+    finH: 'Deixe a repetição com ele e recupere seu tempo', finP: 'Baixe grátis agora e crie sua primeira macro.',
+    dl2: 'Baixar grátis<small>Windows 10 · 11</small>',
+    ftAll: 'Todas as versões', ftPriv: 'Política de privacidade (em coreano)', ftNote: 'Confira os termos e regras de jogos e serviços e use por sua conta e risco.'
+  },
+  de: {
+    nav1: 'Funktionen', nav2: 'Preise', nav3: 'Installation', nav4: 'FAQ', navdl: 'Gratis laden',
+    badge: 'Windows 10 · 11 · Kostenlos starten',
+    h1: 'Taucht es auf dem Bildschirm auf,<br><span class="gold">klickt dein PC</span>',
+    lead: 'Mach ein Bild von der Schaltfläche, die gedrückt werden soll – Sparkle Macro findet sie auf dem Bildschirm und klickt für dich. Auch wenn sich das Fenster bewegt, findet es sie wieder. Und wenn du es einmal vormachst, nimmt es alles als Schritte auf.',
+    dl1: 'Gratis herunterladen<small>Windows-Installer</small>', how: 'Wie funktioniert’s?',
+    note: 'v1.0.27 · ca. 80 MB · aktualisiert sich bei neuen Versionen selbst',
+    fTg: 'Spiel starten', fB: 'Bild gefunden → Klick', fS: 'Übereinstimmung 98 %',
+    howH: 'In drei Schritten fertig', howP: 'Programmieren musst du nicht. Zeig einfach, wo geklickt werden soll.',
+    f1: 'Bild aufnehmen', f1d: 'Zieh mit der Maus über die Schaltfläche oder das Symbol. Oder mach es mit 🔴 Aufnahme einfach vor.',
+    f2: 'Reihenfolge festlegen', f2d: 'Bild suchen und klicken, Tasten drücken, warten – in beliebiger Reihenfolge stapeln.',
+    f3: 'Start drücken', f3d: 'Einmal F10 zum Starten, nochmal zum sofortigen Stoppen.',
+    featH: 'Überlass ihm die Routinearbeit', featP: 'Von einfach bis clever – nimm nur, was du brauchst.',
+    c1: 'Bild suchen &amp; klicken', c1d: 'Sucht nach Bildern statt Koordinaten. Verschiebst du das Fenster, findet es sie trotzdem.',
+    c2: '🔴 Per Aufnahme erstellen', c2d: 'Klick und tipp wie gewohnt – daraus werden Schritte. Sogar die Namen vergibt es selbst.',
+    c3: 'Auch in verdeckten Fenstern', c3d: 'Wähl ein Zielfenster, und es läuft auch hinter anderen Fenstern. Dein PC ist derweil frei für anderes.',
+    c4: 'Gruppen &amp; Ablauf', c4d: 'Schritte in Gruppen bündeln und mit ☑/☐ an- und ausschalten. Springen, wenn gefunden – wiederholen, wenn nicht.',
+    c5: '👁 Überwachen <span class="tag">Premium</span>', c5d: 'Behält den Bildschirm im Blick und handelt nur, wenn eine Bedingung erfüllt ist. Die Aufgabe pausiert so lange und läuft dann weiter.',
+    c6: '⏰ Zeitplan <span class="tag">Premium</span>', c6d: 'Wechselt, startet oder beendet Aufgaben zur festgelegten Zeit. Auch den täglichen Check-in am Morgen.',
+    c7: 'Nach Text &amp; Farbe suchen <span class="tag">Premium</span>', c7d: 'Liest Text auf dem Bildschirm oder klickt, sobald eine bestimmte Farbe erscheint.',
+    c8: 'Jederzeit mit F10 stoppen', c8d: 'Eine Taste stoppt sofort. Greifst du selbst zur Maus, wartet es, bis du loslässt.',
+    w1h: 'Aufpassen – und nur bei Bedarf handeln', w1p: 'Etwa wenn deine Lebenspunkte sinken oder ein Hinweisfenster aufgeht: Sobald das gewählte Bild erscheint, führt es die dafür festgelegte Aktion aus.',
+    w1a: 'Überwacht mehrere Punkte gleichzeitig', w1b: 'Während der Überwachung beendet die Aufgabe ihren Schritt und pausiert', w1c: 'Wiederholt sich dieselbe Situation, regelt das eine Abklingzeit (Cooldown)',
+    w2h: 'Ganz von selbst, pünktlich', w2p: 'Um 6 Uhr Check-in, um 23:30 Uhr das Programm beenden – stell einen Zeitplan auf, und es hält sich daran.',
+    w2a: 'Schritte direkt im Zeitplan erstellen und ausführen', w2b: 'Nur ausgewählte Gruppen einer Aufgabe ausführen', w2c: 'Meldet sich per Discord oder Telegram, wenn es fertig ist',
+    priceH: 'Kostenlos starten', priceP: 'Die Grundfunktionen bleiben gratis. Premium nur, wenn du mehr brauchst.',
+    pFree: 'Kostenlos', pFreeSub: 'Sofort nach der Installation',
+    pf1: 'Bild suchen &amp; klicken · Tasten · Ziehen · Mausrad', pf2: '🔴 Per Aufnahme erstellen', pf3: 'Gruppen · Springen · Wiederholen', pf4: 'Läuft in verdeckten Fenstern', pf5: 'Als .spk-Datei speichern · teilen',
+    pPro: '💎 Premium', pProSub: 'Alles aus Kostenlos + diese Funktionen',
+    pp1: '👁 Überwachen · ⏰ Zeitplan', pp2: 'Nach Text suchen · nach Farbe (RGB) suchen', pp3: 'An Chat · KakaoTalk senden',
+    pm1: '1 Monat', pm3: '3 Monate<em>≈ ₩4,300/Monat</em>', pLife: 'Lebenslang<em>einmalige Zahlung</em>',
+    instH: 'In einer Minute erledigt', instP: 'Nach der Installation prüft es bei jedem Start auf neue Versionen und aktualisiert sich selbst.',
+    s1: 'Herunterladen', s1d: 'Klick oben auf [Gratis laden], um den Installer zu holen.',
+    s2: 'Ausführen', s2d: 'Doppelklick auf die geladene SparkleMacro-Setup.exe.',
+    s3: 'Weiter · Installieren', s3d: 'Einfach immer [Weiter] klicken. Der Eingabetreiber wird mitinstalliert.',
+    s4: 'Vom Desktop starten', s4d: 'Öffne es über das Sparkle Macro-Symbol und folge dem ❓ Tutorial.',
+    ssH4: 'Der Computer wurde durch Windows geschützt', ssP: 'Von Microsoft Defender SmartScreen wurde der Start einer unbekannten App verhindert.', ssMore: 'Weitere Informationen', ssRun: 'Trotzdem ausführen', ssNo: 'Nicht ausführen',
+    ssH: 'Dieses Fenster ist kein Problem',
+    ssBody: 'Es ist ein neues Programm eines unabhängigen Entwicklers, das Windows noch nicht gut kennt – deshalb erscheint dieses Fenster. Klick auf <b>[Weitere Informationen]</b> und dann auf <b>[Trotzdem ausführen]</b>, und die Installation geht weiter. Lade den Installer bitte nur von dieser Seite.',
+    faqH: 'Häufige Fragen',
+    q1: 'Ist es wirklich kostenlos?', a1: 'Ja. Grundfunktionen wie Bild suchen &amp; klicken, Aufnahme, Gruppen und Ausführen in verdeckten Fenstern sind ohne Zeitlimit kostenlos. Premium brauchst du nur für Überwachen, Zeitplan, Text-/Farbsuche und das Senden von Nachrichten.',
+    q2: 'Auf welchen PCs läuft es?', a2: 'Unter Windows 10 · 11 (64 Bit). Mac und Smartphones werden nicht unterstützt.',
+    q3: 'Geht es auch, wenn ich das Fenster verschiebe oder die Auflösung anders ist?', a3: 'Es sucht nach Bildern statt Koordinaten und findet sie daher auch an neuer Position wieder. Ändern sich Skalierung oder Auflösung stark, nimm das Bild einfach neu auf.',
+    q4: 'Kann ich den PC nutzen, während das Makro läuft?', a4: 'Wählst du ein Zielfenster und einen Ausführungsmodus, kann es mit verdecktem Fenster laufen. Selbst im Modus mit echter Maus wartet es, wenn du Maus oder Tastatur benutzt, bis du loslässt, und macht dann weiter.',
+    q5: 'Wie stoppe ich es?', a5: 'Drück F10, und es stoppt sofort. Das Tastenkürzel kannst du in den Einstellungen ändern.',
+    q6: 'Kann ich mein Makro an Freunde weitergeben?', a6: 'Über [📁 Datei ▾] → Speichern landen Schritte und Bilder in einer einzigen .spk-Datei. Schick sie weiter, und sie lässt sich direkt laden und nutzen.',
+    q7: 'Darf ich es in Spielen verwenden?', a7: 'Manche Spiele und Dienste verbieten in ihren Nutzungsbedingungen automatische Eingabeprogramme. Prüf vorher die Bedingungen und Regeln und nutze es auf eigene Verantwortung.',
+    finH: 'Wiederholung abgeben, Zeit zurückgewinnen', finP: 'Jetzt kostenlos laden und dein erstes Makro bauen.',
+    dl2: 'Gratis herunterladen<small>Windows 10 · 11</small>',
+    ftAll: 'Alle Versionen', ftPriv: 'Datenschutzerklärung (Koreanisch)', ftNote: 'Bitte prüf die Bedingungen und Regeln von Spielen und Diensten und nutze es auf eigene Verantwortung.'
+  }
+};
+Object.keys(T).forEach(function (l) { Object.keys(COMMON).forEach(function (k) { T[l][k] = COMMON[k]; }); });
+
+var lang = skDetect();
+function apply() {
+  var d = lang === 'ko' ? KO : (T[lang] || T.en);
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+  document.title = TITLE[lang] || TITLE.en;
+  document.querySelectorAll('[data-t]').forEach(function (el) {
+    var v = d[el.getAttribute('data-t')];
+    if (v != null) el.innerHTML = v;
+  });
+  skLinks(lang);
+}
+skPicker(document.getElementById('lang'), lang, function (l) { lang = l; apply(); });
+apply();
+</script>
+</body>
+</html>
